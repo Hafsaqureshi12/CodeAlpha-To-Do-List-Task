@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #078282FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .todo-container {
+    background-color: #95DBE5FF;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  #task-form {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid gray;
+    border-radius: 4px 0 0 4px;
+  }
+  #add-task-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #339E66FF;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  #add-task-btn:hover {
+    background-color: #244e27;
+  }
+  .task-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .task-filters button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    background-color: #339E66FF;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .task-filters button:hover,
+  .task-filters button.active {
+    background-color: #244e27;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    background-color: #f9f9f9;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  li:hover {
+    background-color: #e0dddd;
+  }
+  li.completed {
+    text-decoration: line-through;
+    color: #706a6a;
+  }
+  .delete-btn, .complete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: color 0.3s;
+  }
+  .delete-btn:hover {
+    color: #e74c3c;
+  }
+  .complete-btn:hover {
+    color: #27ae60;
+  }
+  .task-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #1c6596;
+  }
+  #clear-completed {
+    background-color: transparent;
+    border: none;
+    color: #1c6596;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  #clear-completed:hover {
+    color: #28334AFF;
+  }
